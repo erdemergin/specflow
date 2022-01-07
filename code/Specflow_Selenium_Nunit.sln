@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specflow_Selenium_Nunit", "Specflow_Selenium_Nunit\Specflow_Selenium_Nunit.csproj", "{1DDCE321-B519-40D4-A4BB-5C3F6982BB83}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Specflow_Selenium_Nunit", "Specflow_Selenium_Nunit\Specflow_Selenium_Nunit.csproj", "{1DDCE321-B519-40D4-A4BB-5C3F6982BB83}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Specflow_Selenium_Runner", "Specflow_Selenium_Runner\Specflow_Selenium_Runner.csproj", "{EFC87D1F-B3B2-4C90-8095-5BA68EF963C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{1DDCE321-B519-40D4-A4BB-5C3F6982BB83}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1DDCE321-B519-40D4-A4BB-5C3F6982BB83}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1DDCE321-B519-40D4-A4BB-5C3F6982BB83}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFC87D1F-B3B2-4C90-8095-5BA68EF963C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFC87D1F-B3B2-4C90-8095-5BA68EF963C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFC87D1F-B3B2-4C90-8095-5BA68EF963C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFC87D1F-B3B2-4C90-8095-5BA68EF963C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

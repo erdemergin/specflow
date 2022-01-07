@@ -6,11 +6,9 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Safari;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using TechTalk.SpecFlow;
 
-namespace Specflow_Selenium_Nunit.Drivers
+namespace Specflow_Selenium_Runner.Drivers
 {
     internal class WebDriverLibrary
     {
@@ -45,14 +43,27 @@ namespace Specflow_Selenium_Nunit.Drivers
 
         private dynamic GetBrowserOptions(string browserType)
         {
-            dynamic capability = browserType.ToLowerInvariant() switch
+
+            dynamic capability;
+            switch(browserType.ToLowerInvariant())
             {
-                "chrome" => new ChromeOptions(),
-                "firefox" => new FirefoxOptions(),
-                "microsoftedge" => new EdgeOptions(),
-                "safari" => new SafariOptions(),
-                _ => new ChromeOptions(),// Chrome is default
+                case "chrome":
+                    capability = new ChromeOptions();
+                    break;
+                case "firefox":
+                    capability = new FirefoxOptions();
+                    break;
+                case "microsoftedge":
+                    capability = new EdgeOptions();
+                    break;
+                case "safari":
+                    capability = new SafariOptions();
+                    break;
+                default:
+                    capability = new ChromeOptions();
+                    break;
             };
+
             capability.AddAdditionalOption("se:recordVideo", true);
             return capability;
         }

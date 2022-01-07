@@ -1,12 +1,13 @@
 ﻿using OpenQA.Selenium;
-using Specflow_Selenium_Nunit.Drivers;
+using Specflow_Selenium_Runner.Drivers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TechTalk.SpecFlow;
 
-namespace Specflow_Selenium_Nunit.Hooks
+namespace Specflow_Selenium_Runner.Hooks
 {
     [Binding]
     internal class FeatureHooks
