@@ -35,9 +35,8 @@ jobs:
         MATRIX_CONTEXT: ${{ toJSON(matrix) }}
       run: echo "$MATRIX_CONTEXT"
     - name: Enforce message check
-      env:
-        message: $({ toJSON(github.event.pull_request.title) })
-      run: echo $message
+      shell: powershell
+      run: echo "${{ github.event.pull_request.title }}"
     - name: Get current time
       uses: gerred/actions/current-time@master
       id: current-time
